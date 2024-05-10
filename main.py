@@ -5,15 +5,13 @@ import user
 
 
 def main():
-    # create a while loop that will receive suer input and display the output
+
     dietmeter = dm.dietmeter()
+    # create a while loop that will receive suer input and display the output
     while True:
         user_input = input("Enter your message: ")
         if user_input == 'exit':
             break
-
-        # create a dietmeter object
-
         # chat to openai
         chat_response = dietmeter.chat_to_openai(user_input)
         # print the response
